@@ -22,3 +22,34 @@
   text-decoration: none;
   font-size: 16px;
 }
+.product-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.product-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.product-card {
+  background-color: #fff5f0;
+  border: 1px solid #e8cfc5;
+  border-radius: 12px;
+  padding: 25px;
+  width: 250px;
+}
+
+.product-card h2 {
+  color: maroon;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #f4c542;
+  color: #4a2633;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
