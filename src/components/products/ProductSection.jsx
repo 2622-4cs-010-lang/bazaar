@@ -1,6 +1,6 @@
-import BrownieCard from "./BrownieCard";
-import NankhataiCard from "./NankhataiCard";
-import RollCard from "./RollCard";
+
+import ProductCard from "./ProductCard";
+import { products } from "../../data/products.js";
 
 function ProductSection() {
   return (
@@ -8,9 +8,13 @@ function ProductSection() {
       <h1>Our Menu</h1>
 
       <div className="product-row">
-        <BrownieCard />
-        <NankhataiCard />
-        <RollCard />
+        {products.map((product) => (
+          <ProductCard
+            key={product.id}
+            name={product.name}
+            price={product.price}
+          />
+        ))}
       </div>
     </section>
   );
