@@ -288,3 +288,27 @@ body {
     padding: 12px;
   }
 }
+.product-card button {
+  background-color: #8b1e24;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 7px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.product-card button:disabled {
+  background-color: #dce1e6;
+  color: #9aa3ad;
+  cursor: not-allowed;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #bfc2c7;
+  color: white;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 13px;
+}
