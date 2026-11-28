@@ -363,3 +363,23 @@ body {
 .cart-summary > p {
   color: #4a2633;
 }
+
+/*new*/
+
+/* Fix sold-out product buttons */
+.product-card {
+  min-width: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.product-card button {
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+}
+
+/* Keep unavailable button inside the card */
+.product-card button:disabled {
+  width: 100%;
+}
