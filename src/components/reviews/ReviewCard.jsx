@@ -1,11 +1,12 @@
-function ReviewCard({ name, review, rating }) {
+
+function ReviewCard({ name, comment, rating }) {
   return (
     <div className="review-card">
       <h3>{name}</h3>
 
-      <p>{review}</p>
+      <p>{comment}</p>
 
-      <p>Rating: {rating}/5</p>
+      <p>Rating: {"★".repeat(rating)}</p>
     </div>
   );
 }
