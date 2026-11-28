@@ -312,3 +312,54 @@ body {
   padding: 4px 12px;
   font-size: 13px;
 }
+
+/* Cart Summary - Your Box */
+.cart-summary {
+  background-color: #fffaf6;
+  border: 1px solid #e8cfc3;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  color: #4a2633;
+}
+
+.cart-summary h2 {
+  color: #8b0000;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cart-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ead8ce;
+  border-radius: 7px;
+  padding: 12px 15px;
+  font-size: 14px;
+}
+
+.cart-summary p {
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.cart-summary h3 {
+  color: #8b0000;
+  font-size: 20px;
+  border-top: 1px solid #e8cfc3;
+  padding-top: 12px;
+  margin-top: 15px;
+}
+
+/* Empty Cart Message */
+.cart-summary > p {
+  color: #4a2633;
+}

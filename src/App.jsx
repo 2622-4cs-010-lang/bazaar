@@ -1,8 +1,10 @@
 
+
 import ShopHeader from "./components/layout/ShopHeader";
 import ProductSection from "./components/products/ProductSection";
 import ReviewSection from "./components/reviews/ReviewSection";
 import OrderInfo from "./components/orders/OrderInfo";
+import CartSummary from "./components/orders/CartSummary";
 import Footer from "./components/layout/Footer";
 
 function App() {
@@ -15,11 +17,15 @@ function App() {
       <ReviewSection />
 
       <OrderInfo />
+
+      <CartSummary />
+
       <Footer />
     </div>
   );
 }
 
 export default App;
+
 
 

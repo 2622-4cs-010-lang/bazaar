@@ -1,0 +1,45 @@
+
+import { cart } from "../../data/cart.js";
+
+function CartSummary() {
+  let subtotal = 0;
+
+  for (let i = 0; i < cart.length; i++) {
+    subtotal += cart[i].price * cart[i].qty;
+  }
+
+  const delivery = subtotal >= 3000 ? 0 : 100;
+  const total = subtotal + delivery;
+
+  return (
+    <section className="cart-summary">
+      <h2>Your Box</h2>
+
+      {cart.length === 0 ? (
+        <p>Your box is empty. Add something yummy!</p>
+      ) : (
+        <>
+          <div className="cart-items">
+            {cart.map((item) => (
+              <div className="cart-row" key={item.id}>
+                <span>{item.name}</span>
+                <span>Qty: {item.qty}</span>
+                <span>Rs {item.price * item.qty}</span>
+              </div>
+            ))}
+          </div>
+
+          <p>Subtotal: Rs {subtotal}</p>
+
+          <p>
+            Delivery: {delivery === 0 ? "Free" : `Rs ${delivery}`}
+          </p>
+
+          <h3>Total: Rs {total}</h3>
+        </>
+      )}
+    </section>
+  );
+}
+
+export default CartSummary;
